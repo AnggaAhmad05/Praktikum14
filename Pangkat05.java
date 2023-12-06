@@ -12,17 +12,18 @@ public class Pangkat05 {
 public static int pangkatIterative(int x,int y) {
     int hasil = 1;
 
-    for (int i = 0; i <= y; i++) {
+    for (int i = 1; i <= y; i++) {
         hasil = hasil * x;
+        System.out.print(x + "x");
         
     }
+    System.out.print( 1 + "=");
     return hasil;
-    
     }
 
 public static void main (String [] args) {
-    System.out.println(pangkat(6, 4));
-    System.out.println(pangkatIterative(6, 4));
+    System.out.println(pangkat(2, 5));
+    System.out.println(pangkatIterative(2, 5));
     
     }
 }
